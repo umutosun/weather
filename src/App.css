@@ -1,38 +1,45 @@
-.App {
+.weather{
   text-align: center;
+  margin-top: 50px;
+  color: aliceblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-input{
+   text-align: center;
+  padding: 5px;
+  outline: none;
+  border: 3px solid rgb(3, 85, 85);
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+.weather-input:focus{
+  border: 3px solid rgb(109, 159, 235);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.weather-data{
+  text-align: center;
+  border: 1px solid rgb(168, 167, 233);
+  width: 250px;
+  height: 400px;
+  box-shadow: 10px 10px 5px 0px;
+  border-radius:2em;
+  box-sizing: border-box;
+  background-color: rgb(97, 97, 238);
+  margin: auto;
+}
+body{
+  background-image: url(./assets/weather.gif);
+  background-position: -120px 150px; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.weather-data>h3{
+  margin-top: 0px;
 }
-
-.App-link {
-  color: #61dafb;
+.weather-data>img{
+  margin-top: 80px;
+  width: 80px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-data>h4{
+  text-transform: capitalize;
 }
